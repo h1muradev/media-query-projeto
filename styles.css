@@ -1,0 +1,94 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- ESTILO BASE --- */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 2.5em;
+  color: #ff69b4;
+  transition: color 0.3s ease;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 20px 0;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* 1 - Telas menores que 500px */
+@media screen and (max-width: 500px) {
+  h1 { color: purple; }
+}
+
+/* 2 - Modo impressão */
+@media print and (max-width: 600px) {
+  h1 { color: green; }
+}
+
+/* 3 - Telas até 700px */
+@media (max-width: 700px) {
+  h2 { color: red; }
+}
+
+/* 4 - Intervalo entre 300px e 400px */
+@media (min-width: 300px) and (max-width: 400px) {
+  h3 { font-size: 2em; color: royalblue; }
+}
+
+/* 5 - Orientação paisagem */
+@media (orientation: landscape) {
+  h3 { color: brown; }
+}
+
+/* 6 - Telas bem pequenas (até 250px) */
+@media (max-width: 250px) {
+  h4 { color: crimson; font-size: 1.8em; }
+}
+
+/* 7 - Telas grandes (maior que 1200px) */
+@media (min-width: 1200px) {
+  h5 { color: darkgreen; font-size: 1.5em; }
+}
